@@ -962,23 +962,29 @@ button {
 
 @media screen and (min-width: 992px) {
   .service .row > div:nth-child(odd) .service_pic:hover > svg path.front {
-    fill: #c5eff1;
+    fill: #C5EFF1;
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
   }
   .service .row > div:nth-child(odd) .service_pic:hover > svg path.back {
-    fill: #48b4b9;
+    fill: #48B4B9;
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
   }
   .service .row > div:nth-child(odd) .service_pic:hover .service_pic_icon .service_pic_icon_line {
-    fill: #1e969c;
+    fill: #1E969C;
+  }
+  .service .row > div:nth-child(odd) .service_pic:hover .service_pic_icon svg path[fill="#C5EFF1"] {
+    fill: #1E969C;
+  }
+  .service .row > div:nth-child(odd) .service_pic:hover .service_pic_icon svg path[fill="white"] {
+    fill: #6BC8CC;
   }
   .service .row > div:nth-child(odd) .service_pic:hover .service_pic_icon h3 {
-    color: #1e969c;
+    color: #1E969C;
   }
   .service .row > div:nth-child(odd) .service_pic:hover h2 {
-    color: #0d8288;
+    color: #0D8288;
   }
   .service .row > div:nth-child(even) .service_pic:hover > svg path.front {
     fill: #ffeac2;
@@ -992,6 +998,12 @@ button {
   }
   .service .row > div:nth-child(even) .service_pic:hover .service_pic_icon .service_pic_icon_line {
     fill: #ea9a00;
+  }
+  .service .row > div:nth-child(even) .service_pic:hover .service_pic_icon svg path[fill="#FFEAC2"] {
+    fill: #ffad0d;
+  }
+  .service .row > div:nth-child(even) .service_pic:hover .service_pic_icon svg path[fill="white"] {
+    fill: #ffd584;
   }
   .service .row > div:nth-child(even) .service_pic:hover .service_pic_icon h3 {
     color: #ea9a00;
@@ -1746,7 +1758,7 @@ button {
   margin: 50px auto 0;
   position: relative;
   font-weight: 500;
-  color: #1e969c;
+  color: #1E969C;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2628,7 +2640,7 @@ button {
 
 .contact_form_item label {
   border-radius: 20px 20px 20px 0;
-  background-color: #2da4a9;
+  background-color: #2DA4A9;
   padding: 6px 15px;
   color: #fff;
   font-size: 16px;
@@ -2703,7 +2715,7 @@ button {
 
 @media screen and (min-width: 991px) {
   .contact button:hover {
-    background-color: #48b4b9;
+    background-color: #48B4B9;
   }
   .contact button:hover span {
     color: #fff;
@@ -2818,7 +2830,7 @@ button {
     background-color: #fff;
   }
   .footer_link a:hover svg path {
-    fill: #48b4b9;
+    fill: #48B4B9;
   }
 }
 
@@ -2929,11 +2941,11 @@ button {
 }
 
 .sidebtn.bluebg .sidebtn_item path {
-  fill: #6bc8cc;
+  fill: #6BC8CC;
 }
 
 .sidebtn.bluebg .sidebtn_item:hover path {
-  fill: #1e969c;
+  fill: #1E969C;
 }
 
 @media screen and (min-width: 992px) {

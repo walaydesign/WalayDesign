@@ -2124,8 +2124,21 @@ button {
   margin: 0 auto 44px;
   text-align: center;
   color: var(--gray-900);
+  color: $primary-900;
   &::after {
-    display: none;
+    width: 90px;
+  height: 84px;
+  left: 8%;
+  top: -28%;
+  background-image: url(./assets/title-about.svg);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  transform: rotate(10deg);
   }
 }
 .testi2 {
@@ -2244,7 +2257,10 @@ button {
 
 // ---- journal ----
 .articles {
-  padding: 70px 0 90px;
+  padding: 40px 0 120px;
+}
+.title-articles {
+  color: $secondary-900;
 }
 .title-articles::after {
   width: 90px;
@@ -2268,7 +2284,6 @@ button {
 .art {
   display: block;
   border-radius: 32px 0 32px 32px;
-  // overflow: hidden;
   box-shadow: var(--shadow-card);
   background-color: #fff;
   @include trans;

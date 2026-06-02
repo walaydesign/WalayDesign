@@ -2348,10 +2348,24 @@ button {
   margin: 0 auto 44px;
   text-align: center;
   color: var(--gray-900);
+  color: #af7400;
 }
 
 .title-testi::after {
-  display: none;
+  width: 90px;
+  height: 84px;
+  left: 8%;
+  top: -28%;
+  background-image: url(./assets/title-about.svg);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .testi2_grid {
@@ -2510,7 +2524,11 @@ button {
 }
 
 .articles {
-  padding: 70px 0 90px;
+  padding: 40px 0 120px;
+}
+
+.title-articles {
+  color: #004447;
 }
 
 .title-articles::after {

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walay Design — Portfolio (Bootstrap 5)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- Swiper -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- Brand styles (compiled from styles.scss → styles.css) -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <a class="header_logo" href="#top">
+    <img src="./assets/logo-wordmark.svg" alt="Walay Design">
+  </a>
+  <nav class="header_nav">
+    <a href="#service" data-nav="service">SERVICE</a>
+    <a href="#works" data-nav="works">WORKS</a>
+    <a href="#about" data-nav="about">ABOUT ME</a>
+    <a href="#contact" data-nav="contact">CONTACT ME</a>
+  </nav>
+  <div class="header_lang">
+    <div class="header_lang_active">
+      <img class="globe" src="./assets/globe.svg" alt="">
+      <span data-lang-current>EN</span>
+      <img class="arr" src="./assets/chevron-down.svg" alt="">
+    </div>
+    <ul class="header_lang_list">
+      <li data-lang="TC">繁體中文</li>
+      <li data-lang="SC">简体中文</li>
+    </ul>
+  </div>
+</header>
+
+<div class="wd-app">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero-outer" id="top">
+  <section class="hero">
+    <div class="hero_bg" aria-hidden="true"></div>
+    <div class="hero_veil" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6 hero_copy">
+          <h1 class="hero_title">Turning Complex Ideas Into <span>Intuitive Experiences</span></h1>
+          <p class="hero_sub">I help startups and growing businesses create intuitive digital experiences, stronger brands, and websites that convert.</p>
+          <div class="hero_stats">
+            <div class="hstat"><div class="hstat_n">5+</div><div class="hstat_l">Years in UI/UX</div></div>
+            <div class="hstat"><div class="hstat_n">200+</div><div class="hstat_l">Projects Delivered</div></div>
+            <div class="hstat"><div class="hstat_n">50+</div><div class="hstat_l">Clients Worldwide</div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero_visual" aria-hidden="true">
+          <div class="kv">
+            <img class="kv_char" src="./assets/hero-character.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div><!-- /.hero-outer -->
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section service" id="service">
+    <div class="hero-drip" aria-hidden="true"></div>
+    <div class="container">
+      <h2 class="title title-service">SERVICES</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-6 col-lg-3 svc teal">
+          <div class="svc_blob">
+            <svg class="blob" viewBox="0 0 259 211" fill="none" preserveAspectRatio="xMidYMid meet">
+              <path class="b-back" fill="var(--teal-100)" d="M153.565 30.8136C106.244 19.6744 58.7928 37.2545 30.2158 65.2007C15.4924 79.599 7.86323 105.046 29.9163 127.847C54.5317 153.297 95.1784 189.821 148.256 183.093C201.333 176.366 247.085 134.951 245.515 101.833C243.946 68.7161 200.886 41.9528 153.565 30.8136Z"/>
+              <path class="b-front" fill="var(--teal-400)" d="M133.168 27.1377C84.7686 28.8841 43.7725 59.0493 23.633 94.3717C13.2568 112.571 12.5947 139.776 39.7661 156.367C70.0946 174.885 118.733 200.025 167.981 179.069C217.229 158.113 250.344 104.85 240.155 72.5425C229.966 40.2353 181.567 25.3914 133.168 27.1377Z"/>
+            </svg>
+            <div class="svc_inner">
+              <svg class="glyph" viewBox="0 0 56 56" fill="none">
+                <rect x="2" y="6" width="52" height="38" rx="3" stroke="var(--cream)" stroke-width="1.8"/>
+                <path d="M2 15h52M14 50h28M28 44v6" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M38 22l5 5-5 5M18 22l-5 5 5 5M31 20l-6 14" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="svc_name">Website &amp; Landing Page</h3>
+          <ul class="svc_list">
+            <li>Conversion-focused website</li>
+            <li>SaaS / service landing pages</li>
+            <li>UX structure &amp; visual design</li>
+            <li>Frontend implementation (HTML, CSS, JavaScript)</li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3 svc amber">
+          <div class="svc_blob">
+            <svg class="blob" viewBox="0 0 259 211" fill="none" preserveAspectRatio="xMidYMid meet">
+              <path class="b-back" fill="var(--amber-200)" d="M153.565 30.8136C106.244 19.6744 58.7928 37.2545 30.2158 65.2007C15.4924 79.599 7.86323 105.046 29.9163 127.847C54.5317 153.297 95.1784 189.821 148.256 183.093C201.333 176.366 247.085 134.951 245.515 101.833C243.946 68.7161 200.886 41.9528 153.565 30.8136Z"/>
+              <path class="b-front" fill="var(--amber-600)" d="M133.168 27.1377C84.7686 28.8841 43.7725 59.0493 23.633 94.3717C13.2568 112.571 12.5947 139.776 39.7661 156.367C70.0946 174.885 118.733 200.025 167.981 179.069C217.229 158.113 250.344 104.85 240.155 72.5425C229.966 40.2353 181.567 25.3914 133.168 27.1377Z"/>
+            </svg>
+            <div class="svc_inner">
+              <svg class="glyph" viewBox="0 0 56 56" fill="none">
+                <rect x="4" y="6" width="33" height="26" rx="3" stroke="var(--cream)" stroke-width="1.8"/>
+                <path d="M4 13h33" stroke="var(--cream)" stroke-width="1.8"/>
+                <rect x="18" y="22" width="34" height="28" rx="3" stroke="var(--cream)" stroke-width="1.8"/>
+                <path d="M18 30h34M27 50v3M43 50v3M24 53h22" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="svc_name">Product &amp; App UI/UX</h3>
+          <ul class="svc_list">
+            <li>Web &amp; mobile app design</li>
+            <li>UX research &amp; user flow</li>
+            <li>Design System</li>
+            <li>HMI</li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3 svc teal">
+          <div class="svc_blob">
+            <svg class="blob" viewBox="0 0 259 211" fill="none" preserveAspectRatio="xMidYMid meet">
+              <path class="b-back" fill="var(--teal-100)" d="M153.565 30.8136C106.244 19.6744 58.7928 37.2545 30.2158 65.2007C15.4924 79.599 7.86323 105.046 29.9163 127.847C54.5317 153.297 95.1784 189.821 148.256 183.093C201.333 176.366 247.085 134.951 245.515 101.833C243.946 68.7161 200.886 41.9528 153.565 30.8136Z"/>
+              <path class="b-front" fill="var(--teal-400)" d="M133.168 27.1377C84.7686 28.8841 43.7725 59.0493 23.633 94.3717C13.2568 112.571 12.5947 139.776 39.7661 156.367C70.0946 174.885 118.733 200.025 167.981 179.069C217.229 158.113 250.344 104.85 240.155 72.5425C229.966 40.2353 181.567 25.3914 133.168 27.1377Z"/>
+            </svg>
+            <div class="svc_inner">
+              <svg class="glyph" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="24" stroke="var(--cream)" stroke-width="1.8"/>
+                <path d="M5 25l11 30 7-20-4-10c-1-2.5-2-2.4-3.5-2.5M37 19c2 0 3 1.5 1.5 5-1 2.5-3.5 9-3.5 9l7 18 8-22c1-3 .5-6-1-8M21 19h14" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="svc_name">WordPress Implementation</h3>
+          <ul class="svc_list">
+            <li>Custom WordPress builds</li>
+            <li>Elementor-based layouts</li>
+            <li>Ongoing support &amp; maintenance</li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3 svc amber">
+          <div class="svc_blob">
+            <svg class="blob" viewBox="0 0 259 211" fill="none" preserveAspectRatio="xMidYMid meet">
+              <path class="b-back" fill="var(--amber-200)" d="M153.565 30.8136C106.244 19.6744 58.7928 37.2545 30.2158 65.2007C15.4924 79.599 7.86323 105.046 29.9163 127.847C54.5317 153.297 95.1784 189.821 148.256 183.093C201.333 176.366 247.085 134.951 245.515 101.833C243.946 68.7161 200.886 41.9528 153.565 30.8136Z"/>
+              <path class="b-front" fill="var(--amber-600)" d="M133.168 27.1377C84.7686 28.8841 43.7725 59.0493 23.633 94.3717C13.2568 112.571 12.5947 139.776 39.7661 156.367C70.0946 174.885 118.733 200.025 167.981 179.069C217.229 158.113 250.344 104.85 240.155 72.5425C229.966 40.2353 181.567 25.3914 133.168 27.1377Z"/>
+            </svg>
+            <div class="svc_inner">
+              <svg class="glyph" viewBox="0 0 56 56" fill="none">
+                <path d="M44 18a20 20 0 1 0 3.5 14" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M44 9v10h-10" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="28" cy="28" r="6" stroke="var(--cream)" stroke-width="1.8"/>
+                <path d="M28 18v-3M28 41v-3M38 28h3M15 28h3" stroke="var(--cream)" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="svc_name">Ongoing Support &amp; Iteration</h3>
+          <ul class="svc_list">
+            <li>Design updates &amp; refinements</li>
+            <li>Frontend tweaks &amp; UI improvements</li>
+            <li>WordPress maintenance</li>
+            <li>Design-to-dev handoff support</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKS ============ -->
+  <section class="section works" id="works">
+    <div class="container">
+      <h2 class="title title-works">WORKS</h2>
+      <div class="row g-4 g-lg-5 works_grid">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="work" href="#">
+            <div class="work_pic"><img src="./assets/work-carbonwalker.webp" alt="CarbonWalker"></div>
+            <div class="work_caption"><h3 class="name">CarbonWalker</h3><p class="cat">UIUX Design / App Design</p></div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="work" href="#">
+            <div class="work_pic"><img src="./assets/works-jk.webp" alt="J&amp;K Global Food" style="margin: 0px"></div>
+            <div class="work_caption"><h3 class="name">J&amp;K Global Food</h3><p class="cat">UIUX Design / Wordpress Design</p></div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="work" href="#">
+            <div class="work_pic"><img src="./assets/works-sainsbury.webp" alt="Sainsbury's"></div>
+            <div class="work_caption"><h3 class="name">Sainsbury's</h3><p class="cat">UIUX Design</p></div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="work" href="#">
+            <div class="work_pic"><img src="./assets/works-tba.webp" alt="The Bridge Art"></div>
+            <div class="work_caption"><h3 class="name">The Bridge Art</h3><p class="cat">UI Design</p></div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="work" href="#">
+            <div class="work_pic"><img src="./assets/works-petstime.webp" alt="Petstime"></div>
+            <div class="work_caption"><h3 class="name">Petstime</h3><p class="cat">UI Design</p></div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="work" href="#">
+            <div class="work_pic"><img src="./assets/works-afterwork.webp" alt="Afterwork"></div>
+            <div class="work_caption"><h3 class="name">Afterwork</h3><p class="cat">UIUX Design / Wordpress Design</p></div>
+          </a>
+        </div>
+      </div>
+      <a class="works_more" href="#"><img class="eyes" src="./assets/eyes.svg" alt="">MORE</a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <img class="about_bg" src="./assets/about_bg.svg" alt="">
+    <h2 class="title title-about">ABOUT ME</h2>
+    <div class="about_inner">
+      <div class="about_pic">
+        <img src="./assets/about.png" alt="Zoey Lin">
+        <div class="about_pic_text">
+          <h3>Zoey Lin</h3>
+          <p>UIUX / Graphic<br>Designer</p>
+          <div class="about_links">
+            <a href="#" style="color:rgba(255,255,255,.8)" aria-label="Behance">
+              <svg viewBox="0 0 15 15" fill="none"><path d="M6.27 7.08c.29-.14.51-.3.66-.48.27-.31.4-.73.4-1.25 0-.5-.13-.93-.39-1.29-.44-.59-1.18-.89-2.23-.9H.56v8.47h3.87c.44 0 .84-.04 1.21-.11.37-.08.7-.22.97-.43.24-.18.44-.4.61-.66.25-.4.38-.85.38-1.35 0-.49-.11-.9-.33-1.24-.23-.34-.56-.59-1-.75ZM2.27 4.63h1.86c.41 0 .75.04 1.02.13.31.13.46.39.46.78 0 .36-.12.6-.35.74-.23.14-.54.21-.91.21H2.27V4.63Zm2.95 5.38c-.21.1-.5.15-.87.15H2.27V7.9h2.11c.37 0 .65.05.86.14.36.16.55.47.55.91 0 .52-.19.87-.57 1.06Z" fill="currentColor"/><path d="M13.11 3.55H9.43v1.05h3.68V3.55Z" fill="currentColor"/><path d="M14.39 7.71c-.08-.49-.24-.92-.51-1.29-.29-.42-.65-.73-1.1-.93-.44-.2-.94-.3-1.49-.3-.93 0-1.69.29-2.27.87-.58.58-.87 1.41-.87 2.49 0 1.16.32 2 .97 2.51.64.51 1.39.77 2.24.77 1.02 0 1.82-.3 2.39-.91.36-.38.57-.76.61-1.13h-1.69c-.1.18-.21.32-.34.43-.24.19-.55.28-.92.28-.36 0-.66-.08-.92-.24-.42-.25-.63-.69-.66-1.32h4.62c.01-.54-.01-.96-.05-1.24Zm-4.53.16c.06-.41.21-.73.44-.97.24-.24.57-.36.99-.36.39 0 .72.11.99.34.26.23.41.56.44.99H9.86Z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" style="color:rgba(255,255,255,.8)" aria-label="LinkedIn">
+              <svg viewBox="0 0 15 15" fill="none"><path d="M13.06 13.06V8.99c0-2-.43-3.53-2.76-3.53-1.13 0-1.88.61-2.19 1.19h-.03V5.64H5.88v7.42h2.31V9.38c0-.97.18-1.9 1.37-1.9 1.18 0 1.2 1.1 1.2 1.96v3.62h2.3Z" fill="currentColor"/><path d="M2.13 5.64h2.3v7.42h-2.3V5.64Z" fill="currentColor"/><path d="M3.28 1.94c-.74 0-1.33.6-1.33 1.34 0 .73.59 1.34 1.33 1.34.74 0 1.33-.61 1.33-1.34 0-.74-.59-1.34-1.33-1.34Z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about_text">
+        <p>Dedicated to designing highly interactive and user-friendly products, I enjoy thinking creatively and trying something challenging. During my 3 years of freelancing, I have gained a variety of experience, including product development, product optimisation and interactive website layout. Additionally, I have cooperated with a diverse range of clients, who are entrepreneurs, small studios and SMEs. Very welcome to consult with me if you have any creative ideas or questions about product development!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS (Swiper) ============ -->
+  <section class="section proof">
+    <div class="container" data-testi>
+      <h2 class="title title-testi">WHAT CLIENTS SAID</h2>
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-4">
+          <div class="testi2_list">
+            <button class="person on" data-testi-i="0">
+              <span class="person_av">
+                <svg viewBox="0 0 100 96" width="100%" height="100%" aria-hidden="true">
+                  <path fill="#5CC4C6" d="M53 5C75 3 93 21 93 43c0 17-6 31-22 41-12 8-31 9-43 1C13 77 7 61 7 44 7 21 31 7 53 5Z"/>
+                  <path d="M28 38 Q36 32 44 37" stroke="#1f2a33" stroke-width="3.4" stroke-linecap="round" fill="none" transform="rotate(-8 36 36)"/>
+                  <path d="M58 37 Q66 32 74 38" stroke="#1f2a33" stroke-width="3.4" stroke-linecap="round" fill="none" transform="rotate(6 66 36)"/>
+                  <g transform="translate(-2 1)">
+                    <ellipse cx="37" cy="55" rx="6.4" ry="8.4" fill="#1f2a33"/>
+                    <ellipse cx="63" cy="55" rx="6.4" ry="8.4" fill="#1f2a33"/>
+                    <circle cx="36" cy="51.5" r="1.7" fill="#fff"/>
+                    <circle cx="62" cy="51.5" r="1.7" fill="#fff"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="person_who"><span class="person_name">Grace-Joy Chinenyeze</span><span class="person_role">Product Manager</span></span>
+            </button>
+            <button class="person" data-testi-i="1">
+              <span class="person_av">
+                <svg viewBox="0 0 100 96" width="100%" height="100%" aria-hidden="true">
+                  <path fill="#F9A826" d="M53 5C75 3 93 21 93 43c0 17-6 31-22 41-12 8-31 9-43 1C13 77 7 61 7 44 7 21 31 7 53 5Z"/>
+                  <path d="M28 38 Q36 32 44 37" stroke="#1f2a33" stroke-width="3.4" stroke-linecap="round" fill="none" transform="rotate(11 36 36)"/>
+                  <path d="M58 37 Q66 32 74 38" stroke="#1f2a33" stroke-width="3.4" stroke-linecap="round" fill="none" transform="rotate(-11 66 36)"/>
+                  <g transform="translate(3 -1)">
+                    <ellipse cx="37" cy="55" rx="6.4" ry="8.4" fill="#1f2a33"/>
+                    <ellipse cx="63" cy="55" rx="6.4" ry="8.4" fill="#1f2a33"/>
+                    <circle cx="38.5" cy="54.5" r="1.7" fill="#fff"/>
+                    <circle cx="64.5" cy="54.5" r="1.7" fill="#fff"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="person_who"><span class="person_name">Amy Hutson</span><span class="person_role">CEO at Release</span></span>
+            </button>
+            <button class="person" data-testi-i="2">
+              <span class="person_av">
+                <svg viewBox="0 0 100 96" width="100%" height="100%" aria-hidden="true">
+                  <path fill="#5CC4C6" d="M53 5C75 3 93 21 93 43c0 17-6 31-22 41-12 8-31 9-43 1C13 77 7 61 7 44 7 21 31 7 53 5Z"/>
+                  <path d="M28 38 Q36 32 44 37" stroke="#1f2a33" stroke-width="3.4" stroke-linecap="round" fill="none" transform="rotate(-13 36 36)"/>
+                  <path d="M58 37 Q66 32 74 38" stroke="#1f2a33" stroke-width="3.4" stroke-linecap="round" fill="none" transform="rotate(-3 66 36)"/>
+                  <g transform="translate(1 -2)">
+                    <ellipse cx="37" cy="55" rx="6.4" ry="8.4" fill="#1f2a33"/>
+                    <ellipse cx="63" cy="55" rx="6.4" ry="8.4" fill="#1f2a33"/>
+                    <circle cx="37.5" cy="54" r="1.7" fill="#fff"/>
+                    <circle cx="63.5" cy="54" r="1.7" fill="#fff"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="person_who"><span class="person_name">Mark</span><span class="person_role">Director at BakeryGo</span></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="swiper testi-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testi2_detail">
+                  <h3 class="testi2_title">It was a great experience!</h3>
+                  <div class="testi2_stars" aria-label="5 out of 5">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                  </div>
+                  <p class="testi2_p">You-Zhen Lin is a creative and skilled UX/UI Designer and Web Developer who helped bring my digital portfolio website to life. She has a great eye for design detail and generously shared her knowledge during the process.</p>
+                  <p class="testi2_p">Her work reflects a thoughtful approach, and I appreciate the final result. I'd recommend You-Zhen to anyone looking for a Designer and Web developer who brings both skill and a collaborative spirit to the table.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testi2_detail">
+                  <h3 class="testi2_title">Amazing work, always quick to help.</h3>
+                  <div class="testi2_stars" aria-label="5 out of 5">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                  </div>
+                  <p class="testi2_p">Zoey has volunteered with the charity I lead, Release Counselling and Therapy for Women, over the past few months and has done an amazing job improving the design and user experience of our website.</p>
+                  <p class="testi2_p">Zoey is always quick to respond and help, and is continuing to help us with further improvements to the website, which we're very grateful for.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testi2_detail">
+                  <h3 class="testi2_title">An exceptional asset to my business.</h3>
+                  <div class="testi2_stars" aria-label="5 out of 5">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9l-5.8 3.05 1.1-6.47L2.6 9.9l6.5-.95L12 2.5Z"/></svg>
+                  </div>
+                  <p class="testi2_p">I needed someone to design clear, developer-ready website page layouts, and she consistently delivered exactly that — high-quality, thoughtfully structured designs that my developer could implement without friction.</p>
+                  <p class="testi2_p">Her work included page layouts for key areas of the site, handover assets and specifications for development, and iterating quickly on feedback to keep projects moving.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNAL ============ -->
+  <section class="section articles">
+    <div class="container">
+      <h2 class="title title-articles">JOURNAL</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <a class="art" href="#">
+            <div class="art_thumb"><img src="./assets/works-afterwork.webp" alt=""><span class="art_tag">UX</span></div>
+            <div class="art_body"><h3 class="art_title">5 signs your landing page is quietly losing conversions</h3><div class="art_date">May 12, 2026</div></div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a class="art" href="#">
+            <div class="art_thumb"><div class="art_ph" style="background:linear-gradient(135deg,var(--amber-200),var(--amber-400))"></div><span class="art_tag">Design Systems</span></div>
+            <div class="art_body"><h3 class="art_title">Building a design system a two-person team can actually keep up</h3><div class="art_date">Apr 28, 2026</div></div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a class="art" href="#">
+            <div class="art_thumb"><img src="./assets/works-petstime.webp" alt=""><span class="art_tag">WordPress</span></div>
+            <div class="art_body"><h3 class="art_title">Elementor or custom build? How I decide on every project</h3><div class="art_date">Apr 03, 2026</div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact" style="padding:120px 0 60px">
+    <h2 class="title title-contact">CONTACT ME</h2>
+    <form class="contact_form" data-contact>
+      <div class="row g-3">
+        <div class="col-md-6 cfield"><label for="name">Name*</label><input id="name" type="text"></div>
+        <div class="col-md-6 cfield"><label for="email">Email*</label><input id="email" type="text"></div>
+        <div class="col-md-6 cfield"><label for="whatsapp">Whatsapp</label><input id="whatsapp" type="text"></div>
+        <div class="col-md-6 cfield"><label for="line">Line ID</label><input id="line" type="text"></div>
+        <div class="col-12 cfield"><label for="ctitle">Title</label><input id="ctitle" type="text"></div>
+        <div class="col-12 cfield"><label for="content">Content*</label><textarea id="content"></textarea></div>
+      </div>
+      <button class="contact_send" type="submit">
+        <span>SEND</span>
+        <svg viewBox="0 0 25 25" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.18 4.49l10.67 4.8c.76.34 1.4.63 1.87.9.46.26.97.6 1.24 1.16.36.72.36 1.58 0 2.3-.27.55-.78.9-1.24 1.16-.47.27-1.11.56-1.87.9l-10.65 4.79c-.78.35-1.43.65-1.96.83-.5.18-1.11.33-1.71.16-.79-.22-1.43-.8-1.73-1.56-.23-.58-.13-1.2-.01-1.72.13-.54.36-1.22.63-2.03l1.06-3.18c.11-.33.11-.36.12-.39 0-.03 0-.05 0-.08 0-.02 0-.04-.01-.05-.01-.03-.02-.07-.13-.4L3.39 8.81c-.27-.81-.49-1.49-.62-2.03-.12-.52-.22-1.14.01-1.72.3-.76.94-1.34 1.73-1.56.6-.17 1.2-.01 1.71.16.52.18 1.17.47 1.95.83zM6.49 13.54h5.49c.58 0 1.04-.47 1.04-1.04 0-.58-.47-1.04-1.04-1.04H6.47L5.39 8.2c-.29-.87-.48-1.46-.59-1.9-.08-.35-.07-.48-.07-.49.06-.14.18-.25.33-.29.02 0 .14 0 .49.12.42.15.99.4 1.83.78l10.57 4.76c.82.37 1.37.62 1.76.83.31.18.39.27.4.28.06.14.06.3 0 .44-.01.01-.09.1-.4.28-.38.21-.93.46-1.76.83l-10.56 4.75c-.84.38-1.41.63-1.83.78-.35.12-.48.12-.49.12-.15-.05-.27-.15-.33-.29-.01-.02-.02-.14.07-.49.1-.44.3-1.03.59-1.91l1.04-3.13z" fill="var(--amber-800)"/></svg>
+      </button>
+    </form>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer_inner">
+      <div class="footer_links">
+        <a href="#" aria-label="Line">
+          <svg viewBox="0 0 19 19" fill="none"><path d="M9.5.4C4.26.4 0 3.88 0 8.16c0 3.83 3.38 7.04 7.94 7.65.31.07.73.21.84.47.09.24.06.61.03.86l-.13.81c-.04.24-.19.95.83.52 1.02-.43 5.47-3.25 7.47-5.56C18.35 11.4 19 9.86 19 8.16 19 3.88 14.74.4 9.5.4ZM5.78 10.7H3.89c-.27 0-.5-.23-.5-.5V6.4c0-.27.23-.5.5-.5.28 0 .5.23.5.5v3.3h1.39c.28 0 .5.22.5.5 0 .27-.22.5-.5.5Zm1.95-.5c0 .27-.22.5-.5.5-.27 0-.5-.23-.5-.5V6.4c0-.27.23-.5.5-.5.28 0 .5.23.5.5v3.8Zm4.55 0c0 .22-.14.41-.34.47-.05.02-.1.03-.16.03-.16 0-.31-.07-.4-.2L9.44 7.86V10.2c0 .27-.22.5-.5.5-.27 0-.49-.23-.49-.5V6.4c0-.22.14-.41.34-.47.05-.02.11-.03.15-.03.16 0 .3.08.39.2l1.95 2.65V6.4c0-.27.22-.5.5-.5.27 0 .5.23.5.5v3.8Zm3.05-2.4c.28 0 .5.22.5.5 0 .27-.22.5-.5.5h-1.39v.9h1.39c.28 0 .5.22.5.5 0 .27-.22.5-.5.5h-1.89c-.27 0-.5-.23-.5-.5V6.4c0-.27.23-.5.5-.5h1.89c.28 0 .5.23.5.5 0 .28-.22.5-.5.5h-1.39v.9h1.39Z" fill="#fff"/></svg>
+        </a>
+        <a href="#" aria-label="Email">
+          <svg viewBox="0 0 19 19" fill="none"><path d="M11.09 11.64c-.47.32-1.02.48-1.59.48-.57 0-1.12-.16-1.59-.48L.13 6.45c-.04-.03-.08-.06-.13-.09v8.5c0 .98.79 1.75 1.75 1.75h15.5c.98 0 1.75-.79 1.75-1.75v-8.5c-.04.03-.08.06-.13.09l-7.78 5.19Z" fill="#fff"/><path d="M.74 5.52l7.79 5.19c.29.2.63.3.97.3.34 0 .67-.1.97-.3l7.79-5.19c.46-.31.74-.83.74-1.39 0-.96-.78-1.75-1.75-1.75H1.75C.78 2.38 0 3.17 0 4.13c0 .56.28 1.08.74 1.39Z" fill="#fff"/></svg>
+        </a>
+      </div>
+      <p class="footer_copy">Copyright © Walay Design All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ============ SIDE RAIL ============ -->
+<div class="siderail">
+  <button class="siderail_btn" data-nav="contact">
+    <svg class="bg" viewBox="0 0 50 48" fill="none"><path d="M25 1C11 1 1 9 1 22c0 9 6 16 16 19l3 6c.4.8 1.5.8 1.9 0l2-4c14-1 25-9 25-21C49 9 39 1 25 1Z"/></svg>
+    <span>Mail</span>
+  </button>
+  <button class="siderail_btn" data-nav="works">
+    <svg class="bg" viewBox="0 0 50 48" fill="none"><path d="M25 1C11 1 1 9 1 22c0 9 6 16 16 19l3 6c.4.8 1.5.8 1.9 0l2-4c14-1 25-9 25-21C49 9 39 1 25 1Z"/></svg>
+    <span>Work</span>
+  </button>
+  <button class="siderail_btn" data-nav="top">
+    <svg class="bg" viewBox="0 0 50 48" fill="none"><path d="M25 1C11 1 1 9 1 22c0 9 6 16 16 19l3 6c.4.8 1.5.8 1.9 0l2-4c14-1 25-9 25-21C49 9 39 1 25 1Z"/></svg>
+    <span>Top</span>
+  </button>
+</div>
+
+<div class="wd-toast" data-toast></div>
+
+<!-- Bootstrap + Swiper bundles, then app -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</body>
+</html>

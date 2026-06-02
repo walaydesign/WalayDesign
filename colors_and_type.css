@@ -1,0 +1,170 @@
+/* ============================================================
+   WALAY DESIGN — Colors & Type tokens
+   哇咧設計 · Taiwan UI/UX + Graphic design studio
+   Source of truth: walaydesign/portfolio (public/css/style.scss)
+   + Figma "walay-claude.fig" (component/color, component/Typographic)
+   ============================================================ */
+
+/* ---------- Webfonts (local) ----------
+   Signika  → display / headings / UI chrome (EN)
+   Prompt   → body copy (EN)
+   For Traditional/Simplified Chinese use Noto Sans TC / SC.            */
+
+@font-face { font-family:"Signika"; font-weight:300; font-style:normal;
+  src:url("fonts/Signika-Light.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Signika"; font-weight:400; font-style:normal;
+  src:url("fonts/Signika-Regular.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Signika"; font-weight:500; font-style:normal;
+  src:url("fonts/Signika-Medium.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Signika"; font-weight:600; font-style:normal;
+  src:url("fonts/Signika-SemiBold.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Signika"; font-weight:700; font-style:normal;
+  src:url("fonts/Signika-Bold.ttf") format("truetype"); font-display:swap; }
+
+@font-face { font-family:"Prompt"; font-weight:300; font-style:normal;
+  src:url("fonts/Prompt-Light.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Prompt"; font-weight:400; font-style:normal;
+  src:url("fonts/Prompt-Regular.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Prompt"; font-weight:500; font-style:normal;
+  src:url("fonts/Prompt-Medium.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Prompt"; font-weight:700; font-style:normal;
+  src:url("fonts/Prompt-Bold.ttf") format("truetype"); font-display:swap; }
+@font-face { font-family:"Prompt"; font-weight:800; font-style:normal;
+  src:url("fonts/Prompt-ExtraBold.ttf") format("truetype"); font-display:swap; }
+
+:root {
+  /* ============ PRIMARY · Amber (哇咧 yellow) ============ */
+  --amber-100:#FFF1D6;
+  --amber-200:#FFEAC2;
+  --amber-300:#FFDFA1;
+  --amber-400:#FFD584;
+  --amber-500:#FFC24A;
+  --amber-600:#FFAD0D;   /* brand core — links, CTAs, accents      */
+  --amber-700:#EA9A00;
+  --amber-800:#D08900;
+  --amber-900:#AF7400;
+  --amber-logo:#FFA800;  /* exact fill used in the wordmark SVG     */
+
+  /* ============ SECONDARY · Teal ============ */
+  --teal-100:#C5EFF1;
+  --teal-200:#97DDE0;
+  --teal-300:#6BC8CC;
+  --teal-400:#48B4B9;    /* footer / secondary surfaces            */
+  --teal-500:#2DA4A9;    /* secondary core — labels, headings      */
+  --teal-600:#1E969C;
+  --teal-700:#0D8288;
+  --teal-800:#006C71;
+  --teal-900:#004447;
+
+  /* ============ GRAY ============ */
+  --gray-100:#EFEFEF;
+  --gray-200:#E1E1E1;
+  --gray-300:#CECECE;
+  --gray-400:#B7B7B7;
+  --gray-500:#9D9D9D;
+  --gray-600:#878787;
+  --gray-700:#6E6E6E;
+  --gray-800:#5A5A5A;    /* body sub-text / nav idle               */
+  --gray-900:#343434;    /* default body ink                       */
+
+  /* ============ SURFACES / NEUTRALS ============ */
+  --bg:#F8F8F8;          /* page background                        */
+  --surface:#FFFFFF;     /* cards, nav pill, inputs                */
+  --cream:#FFFBF3;       /* warm off-white (icon fills, panels)    */
+  --cream-soft:#FFF8F0;
+  --tint-amber:#FFE8BB;  /* card-header tint (color/type cards)    */
+  --tint-teal:#ECF9FA;   /* teal wash background                   */
+  --ink:#152536;         /* deep slate — section titles in kit     */
+  --black:#000000;
+  --white:#FFFFFF;
+
+  /* ============ SEMANTIC ============ */
+  --fg-1:var(--gray-900);     /* primary text   */
+  --fg-2:var(--gray-800);     /* secondary text */
+  --fg-3:var(--gray-500);     /* muted / hint   */
+  --fg-on-amber:#FFFFFF;
+  --fg-on-teal:#FFFFFF;
+  --link:var(--amber-600);
+  --link-hover:var(--amber-700);
+  --accent:var(--amber-600);
+  --accent-2:var(--teal-500);
+  --border:var(--gray-200);
+  --border-soft:var(--gray-100);
+
+  /* ============ TYPE FAMILIES ============ */
+  --font-display:"Signika", system-ui, sans-serif;  /* headings, UI chrome */
+  --font-body:"Prompt", system-ui, sans-serif;       /* paragraphs, lists   */
+  --font-tc:"Noto Sans TC", system-ui, sans-serif;   /* 繁體中文 */
+  --font-sc:"Noto Sans SC", system-ui, sans-serif;   /* 简体中文 */
+
+  /* ============ TYPE SCALE (from Figma Typographic) ============ */
+  /* Signika headings */
+  --h1-size:40px; --h1-line:1.2;  --h1-weight:700;
+  --h2-size:36px; --h2-line:1.2;  --h2-weight:700;
+  --h3-size:30px; --h3-line:1.25; --h3-weight:700;
+  --h4-size:24px; --h4-line:1.3;  --h4-weight:700;
+  --h5-size:20px; --h5-line:1.35; --h5-weight:700;
+  --h6-size:18px; --h6-line:1.4;  --h6-weight:600;
+  --h7-size:16px; --h7-line:1.5;  --h7-weight:600;
+  /* Section display titles (banded headlines like "SERVICES") */
+  --display-size:44px; --display-weight:700; --display-tracking:0.05em;
+  --page-title-size:56px;
+  /* Prompt body — fs scale */
+  --fs-1:20px; --fs-2:18px; --fs-3:16px; --fs-4:15px; --fs-5:14px; --fs-6:12px;
+  --body-line:1.8;          /* generous body leading              */
+  --body-weight:300;        /* Prompt Light is the default body   */
+  --tracking:0.03em;        /* global letter-spacing on body      */
+
+  /* ============ RADII (asymmetric "speech-bubble" family) ============ */
+  --r-sm:12px;
+  --r-md:20px;
+  --r-lg:40px;
+  --r-pill:100px;
+  --r-bubble:40px 40px 40px 0;   /* work cards / image frames      */
+  --r-bubble-tr:0 35px 35px 35px;/* name plates (top-left cut)     */
+  --r-tag:30px 30px 30px 0;      /* category tags                  */
+  --r-input:0 25px 25px 25px;    /* form fields (top-left cut)     */
+  --r-label:20px 20px 20px 0;    /* field labels                   */
+
+  /* ============ SHADOWS ============ */
+  --shadow-card:0 5px 15px rgba(0,0,0,0.10);   /* default elevation */
+  --shadow-input:0 4px 10px rgba(0,0,0,0.15);
+  --shadow-soft:0 3px 8px rgba(0,0,0,0.15);
+  --shadow-amber:0 3px 10px rgba(255,255,34,0.50); /* glow under SEND */
+  --shadow-teal:0 5px 10px rgba(34,255,233,0.40);  /* glow under MORE */
+
+  /* ============ MOTION ============ */
+  --ease:cubic-bezier(0.4,0,0.2,1);
+  --dur:0.3s;          /* chrome / hovers                          */
+  --dur-slow:0.5s;     /* work-card reveal                         */
+}
+
+/* ---------- Base element styling ---------- */
+body {
+  background:var(--bg);
+  color:var(--fg-1);
+  font-family:var(--font-body);
+  font-weight:var(--body-weight);
+  letter-spacing:var(--tracking);
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family:var(--font-display); font-weight:700; margin:0; }
+h1{ font-size:var(--h1-size); line-height:var(--h1-line); }
+h2{ font-size:var(--h2-size); line-height:var(--h2-line); }
+h3{ font-size:var(--h3-size); line-height:var(--h3-line); }
+h4{ font-size:var(--h4-size); line-height:var(--h4-line); }
+h5{ font-size:var(--h5-size); line-height:var(--h5-line); }
+h6{ font-size:var(--h6-size); line-height:var(--h6-line); font-weight:600; }
+
+p { font-size:var(--fs-4); line-height:var(--body-line); margin:0; }
+a { color:var(--fg-1); text-decoration:none; transition:color var(--dur) var(--ease); }
+a:hover { color:var(--link); }
+small,.fs-6 { font-size:var(--fs-6); }
+
+/* Banded section display title (e.g. SERVICES / WORKS) */
+.display-title {
+  font-family:var(--font-display); font-weight:700;
+  font-size:var(--display-size); letter-spacing:var(--display-tracking);
+  text-align:center;
+}

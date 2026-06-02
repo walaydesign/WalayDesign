@@ -33,28 +33,28 @@
   src:url("fonts/Prompt-ExtraBold.ttf") format("truetype"); font-display:swap; }
 
 :root {
-  /* ============ PRIMARY · Amber (哇咧 yellow) ============ */
-  --amber-100:#FFF1D6;
-  --amber-200:#FFEAC2;
-  --amber-300:#FFDFA1;
-  --amber-400:#FFD584;
-  --amber-500:#FFC24A;
-  --amber-600:#FFAD0D;   /* brand core — links, CTAs, accents      */
-  --amber-700:#EA9A00;
-  --amber-800:#D08900;
-  --amber-900:#AF7400;
-  --amber-logo:#FFA800;  /* exact fill used in the wordmark SVG     */
+  /* ============ PRIMARY · primary (哇咧 yellow) ============ */
+  --primary-100:#FFF1D6;
+  --primary-200:#FFEAC2;
+  --primary-300:#FFDFA1;
+  --primary-400:#FFD584;
+  --primary-500:#FFC24A;
+  --primary-600:#FFAD0D;   /* brand core — links, CTAs, accents      */
+  --primary-700:#EA9A00;
+  --primary-800:#D08900;
+  --primary-900:#AF7400;
+  --primary-logo:#FFA800;  /* exact fill used in the wordmark SVG     */
 
-  /* ============ SECONDARY · Teal ============ */
-  --teal-100:#C5EFF1;
-  --teal-200:#97DDE0;
-  --teal-300:#6BC8CC;
-  --teal-400:#48B4B9;    /* footer / secondary surfaces            */
-  --teal-500:#2DA4A9;    /* secondary core — labels, headings      */
-  --teal-600:#1E969C;
-  --teal-700:#0D8288;
-  --teal-800:#006C71;
-  --teal-900:#004447;
+  /* ============ SECONDARY · secondary ============ */
+  --secondary-100:#C5EFF1;
+  --secondary-200:#97DDE0;
+  --secondary-300:#6BC8CC;
+  --secondary-400:#48B4B9;    /* footer / secondary surfaces            */
+  --secondary-500:#2DA4A9;    /* secondary core — labels, headings      */
+  --secondary-600:#1E969C;
+  --secondary-700:#0D8288;
+  --secondary-800:#006C71;
+  --secondary-900:#004447;
 
   /* ============ GRAY ============ */
   --gray-100:#EFEFEF;
@@ -72,8 +72,8 @@
   --surface:#FFFFFF;     /* cards, nav pill, inputs                */
   --cream:#FFFBF3;       /* warm off-white (icon fills, panels)    */
   --cream-soft:#FFF8F0;
-  --tint-amber:#FFE8BB;  /* card-header tint (color/type cards)    */
-  --tint-teal:#ECF9FA;   /* teal wash background                   */
+  --tint-primary:#FFE8BB;  /* card-header tint (color/type cards)    */
+  --tint-secondary:#ECF9FA;   /* secondary wash background                   */
   --ink:#152536;         /* deep slate — section titles in kit     */
   --black:#000000;
   --white:#FFFFFF;
@@ -82,12 +82,12 @@
   --fg-1:var(--gray-900);     /* primary text   */
   --fg-2:var(--gray-800);     /* secondary text */
   --fg-3:var(--gray-500);     /* muted / hint   */
-  --fg-on-amber:#FFFFFF;
-  --fg-on-teal:#FFFFFF;
-  --link:var(--amber-600);
-  --link-hover:var(--amber-700);
-  --accent:var(--amber-600);
-  --accent-2:var(--teal-500);
+  --fg-on-primary:#FFFFFF;
+  --fg-on-secondary:#FFFFFF;
+  --link:var(--primary-600);
+  --link-hover:var(--primary-700);
+  --accent:var(--primary-600);
+  --accent-2:var(--secondary-500);
   --border:var(--gray-200);
   --border-soft:var(--gray-100);
 
@@ -130,8 +130,8 @@
   --shadow-card:0 5px 15px rgba(0,0,0,0.10);   /* default elevation */
   --shadow-input:0 4px 10px rgba(0,0,0,0.15);
   --shadow-soft:0 3px 8px rgba(0,0,0,0.15);
-  --shadow-amber:0 3px 10px rgba(255,255,34,0.50); /* glow under SEND */
-  --shadow-teal:0 5px 10px rgba(34,255,233,0.40);  /* glow under MORE */
+  --shadow-primary:0 3px 10px rgba(255,255,34,0.50); /* glow under SEND */
+  --shadow-secondary:0 5px 10px rgba(34,255,233,0.40);  /* glow under MORE */
 
   /* ============ MOTION ============ */
   --ease:cubic-bezier(0.4,0,0.2,1);

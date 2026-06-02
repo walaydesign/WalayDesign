@@ -3,13 +3,30 @@
   'use strict';
 
   /* ---------- header: dock on scroll ---------- */
-  var header = document.querySelector('.header');
-  function onScrollDock() {
-    if (!header) return;
-    header.classList.toggle('docked', window.scrollY > 80);
+  // var header = document.querySelector('.header');
+  // function onScrollDock() {
+  //   if (!header) return;
+  //   header.classList.toggle('docked', window.scrollY > 80);
+  // }
+  // window.addEventListener('scroll', onScrollDock, { passive: true });
+  // onScrollDock();
+  resize();
+  $(window).on("resize scroll", function () {
+    resize();
+  });
+  function resize() {
+    // header
+    if ($(window).scrollTop() > 0) {
+      $(".header").addClass("scrolldown");
+    } else {
+      $(".header").removeClass("scrolldown");
+    }
+
+    // lang
+    if ($(window).width() >= 992) {
+      $(".header_lang").removeClass("active");
+    }
   }
-  window.addEventListener('scroll', onScrollDock, { passive: true });
-  onScrollDock();
 
   /* ---------- smooth-scroll nav + scroll-spy ---------- */
   function goTo(id) {
@@ -60,9 +77,9 @@
   if (swiperEl && window.Swiper) {
     var testiSwiper = new Swiper(swiperEl, {
       loop: true,
-      speed: 500,
+      speed: 800,
       autoHeight: true,
-      autoplay: { delay: 6000, disableOnInteraction: false, pauseOnMouseEnter: true },
+      autoplay: { delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true },
       on: {
         slideChange: function () {
           var i = this.realIndex;
@@ -100,3 +117,19 @@
     });
   }
 })();
+
+
+resizeHome();
+$(window).on("resize scroll", function () {
+  resizeHome();
+});
+function resizeHome() {
+
+  let contactBottom = $("#contact").offset().top - $(window).height();
+  // sidebtn
+  if ($(window).scrollTop() >= contactBottom) {
+    $(".sidebtn").addClass("bluebg");
+  } else {
+    $(".sidebtn").removeClass("bluebg");
+  }
+}

@@ -44,6 +44,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./aos.css">
     <!-- Brand styles (compiled from styles.scss → styles.css) -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -115,22 +116,22 @@
       <nav class="header_nav d-lg-flex align-items-center">
         <ul class="d-lg-flex align-items-center">
           <li>
-            <a class="gotoelement gotoelement-service" data-target="#service"
+            <a href="#service"
               >SERVICE</a
             >
           </li>
           <li>
-            <a class="gotoelement gotoelement-works" data-target="#works"
+            <a href="#works"
               >WORKS</a
             >
           </li>
           <li>
-            <a class="gotoelement gotoelement-about" data-target="#about"
+            <a href="#about"
               >ABOUT ME</a
             >
           </li>
           <li>
-            <a class="gotoelement gotoelement-contact" data-target="#contact"
+            <a href="#contact"
               >CONTACT ME</a
             >
           </li>
@@ -196,15 +197,15 @@
           <div class="container position-relative">
             <div class="row align-items-center g-4 g-lg-5">
               <div class="col-lg-6 hero_copy">
-                <h1 class="hero_title">
-                  Turning Complex Ideas Into <span>Intuitive Experiences</span>
+                <h1 class="hero_title" data-aos="fade-up" data-aos-duration="800">
+                  Turning <br>Complex Ideas Into <br><span>Intuitive Experiences</span>
                 </h1>
-                <p class="hero_sub">
+                <p class="hero_sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
                   I help startups and growing businesses create intuitive
                   digital experiences, stronger brands, and websites that
                   convert.
                 </p>
-                <div class="hero_stats">
+                <div class="hero_stats" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                   <div class="hstat">
                     <div class="hstat_n">5+</div>
                     <div class="hstat_l">Years in UI/UX</div>
@@ -240,7 +241,7 @@
         <div class="container">
           <h2 class="title title-service">SERVICES</h2>
           <div class="row g-4 justify-content-center">
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-duration="800">
               <div class="service_pic" style="margin-top: -29px">
                 <svg
                   width="259"
@@ -309,7 +310,7 @@
               </ul>
             </div>
 
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
               <div class="service_pic">
                 <svg
                   width="234"
@@ -369,7 +370,7 @@
               </ul>
             </div>
 
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               <div class="service_pic">
                 <svg
                   width="228"
@@ -423,7 +424,7 @@
               </ul>
             </div>
 
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               <div class="service_pic">
                 <svg
                   width="235"
@@ -832,7 +833,7 @@
         <div class="container" data-testi>
           <h2 class="title title-testi text-center">WHAT CLIENTS SAID</h2>
           <div class="row g-4 g-lg-5 align-items-center">
-            <div class="col-lg-4">
+            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="800">
               <div class="testi2_list">
                 <button class="person on" data-testi-i="0">
                   <img class="person_av" src="./assets/avatar-1.png" alt="" />
@@ -857,7 +858,7 @@
                 </button>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8" data-aos="fade-left" data-aos-duration="800">
               <div class="swiper testi-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -1009,7 +1010,7 @@
         <div class="container">
           <h2 class="title title-articles">ARTICLES</h2>
           <div class="row g-4">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="800">
               <a class="art" href="#">
                 <div class="art_thumb">
                   <img src="./assets/article-thumb-1.webp" alt="" /><span
@@ -1025,7 +1026,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               <a class="art" href="#">
                 <div class="art_thumb">
                   <img src="./assets/article-thumb-2.webp" alt="" /><span
@@ -1042,7 +1043,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
               <a class="art" href="#">
                 <div class="art_thumb">
                   <img src="./assets/article-thumb-3.webp" alt="" /><span
@@ -1324,6 +1325,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./aos.js"></script>
     <script src="script.js"></script>
     <script
       src="https://mcp.figma.com/mcp/html-to-design/capture.js"

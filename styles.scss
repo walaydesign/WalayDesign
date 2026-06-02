@@ -184,7 +184,7 @@ button {
 .header {
   justify-content: center;
   position: fixed;
-  top: 20px;
+  top: 56px;
   left: 50%;
   transform: translateX(-50%);
   transition: $dur;
@@ -2159,7 +2159,7 @@ button {
     line-height: 1.85;
     color: var(--gray-800);
     margin-bottom: 16px;
-    max-width: 40em;
+    // max-width: 40em;
     &:last-child {
       margin-bottom: 0;
     }

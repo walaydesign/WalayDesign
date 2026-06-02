@@ -141,7 +141,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
-  top: 20px;
+  top: 56px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -2401,7 +2401,6 @@ button {
   line-height: 1.85;
   color: var(--gray-800);
   margin-bottom: 16px;
-  max-width: 40em;
 }
 
 .testi2_p:last-child {

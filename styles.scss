@@ -1188,33 +1188,6 @@ button {
       object-fit: cover;
     }
   }
-  &_caption {
-    position: absolute;
-    left: 14px;
-    right: 14px;
-    bottom: 0;
-    transform: translateY(50%);
-    background: var(--primary-600);
-    @include cut(6px, 22px, 22px, 22px);
-    padding: 16px 22px;
-    box-shadow: 0 10px 22px -8px rgba(191, 109, 0, 0.5);
-    .name {
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 22px;
-      color: #fff;
-      line-height: 1.1;
-    }
-    .cat {
-      margin-top: 6px;
-      font-family: var(--font-display);
-      font-weight: 500;
-      font-size: 13px;
-      color: #fff;
-      opacity: 0.85;
-      letter-spacing: 0.02em;
-    }
-  }
 }
 
 .works {
@@ -1230,25 +1203,28 @@ button {
     right: 14px;
     bottom: 0;
     transform: translateY(50%);
-    background: var(--primary-600);
-    @include cut(6px, 22px, 22px, 22px);
-    padding: 16px 22px;
-    box-shadow: 0 10px 22px -8px rgba(191, 109, 0, 0.5);
+    background: #fff;
+    @include cut(4px, 16px, 16px, 16px);
+    padding: 16px 20px 12px;
+    max-width: 100%;
+    width: fit-content;
+    // box-shadow: 0 10px 22px -8px rgba(191, 109, 0, 0.5);
     transition: $dur;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     .name {
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 22px;
-      color: #fff;
+      font-size: 18px;
+      color: $gray-800;
       line-height: 1.1;
-    transition: $dur;
+      transition: $dur;
     }
     .cat {
       margin-top: 6px;
       font-family: var(--font-display);
       font-weight: 500;
       font-size: 13px;
-      color: #fff;
+      color: $secondary-600;
       opacity: 0.85;
       letter-spacing: 0.02em;
     transition: $dur;
